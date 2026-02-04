@@ -1,6 +1,3 @@
-TEST
-
-
 [History and Motivation](01-history-and-motivation/README.md)
 | [Technology Overview](02-technology-overview/README.md)
 | [Installation and Set Up](03-installation-and-set-up/README.md)
