@@ -1,15 +1,17 @@
+# Overlay configuration to enable debuggers
 version: "3.9"
 services:
   api-node:
-    command:
+    command: 
       - "npm"
       - "run"
       - "debug-docker"
     ports:
       - "3000:3000"
+      # inspect debug port
       - "9229:9229"
   api-golang:
-    command:
+    command: 
       - "dlv"
       - "debug"
       - "/app/main.go"
@@ -22,4 +24,5 @@ services:
       - "--api-version=2"
     ports:
       - "8080:8080"
+      # delve debug port
       - "4000:4000"
